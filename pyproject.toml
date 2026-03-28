@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "rowlens"
+version = "1.0.0"
+description = "Stream large CSV files and surface exact row matches with a readable CLI report."
+authors = ["Jordi <jordi@example.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{ include = "rowlens", from = "src" }]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+rich = "^14.1.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.4.2"
+
+[tool.poetry.scripts]
+rowlens = "rowlens.cli:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[build-system]
+requires = ["poetry-core>=1.9.0"]
+build-backend = "poetry.core.masonry.api"
