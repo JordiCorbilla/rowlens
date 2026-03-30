@@ -18,6 +18,20 @@ When a CSV is 17 GB, the usual "open it in a spreadsheet" workflow is already de
 poetry install
 ```
 
+## Run With `python -m`
+
+If you are working inside this Poetry project, use:
+
+```bash
+poetry run python -m rowlens --file "data.csv" --keyword "1213131" --filter "AAA"
+```
+
+If `rowlens` is installed into a regular virtual environment or from PyPI, the equivalent command is:
+
+```bash
+python -m rowlens --file "data.csv" --keyword "1213131" --filter "AAA"
+```
+
 ## Usage
 
 ```bash
@@ -35,6 +49,8 @@ poetry run rowlens \
   --max-results 5 \
   --output "output/results.txt"
 ```
+
+You can swap `poetry run rowlens` for `poetry run python -m rowlens` in the examples above if you prefer module-style execution.
 
 ## Matching rules
 

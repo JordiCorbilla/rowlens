@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "rowlens"
-version = "1.0.0"
+version = "1.0.1"
 description = "Stream large CSV files and surface exact row matches with a readable CLI report."
 authors = ["Jordi <jordi@example.com>"]
 license = "MIT"
